@@ -15,5 +15,10 @@ class MainActivity : AppCompatActivity() {
         binding.titleApplication.setOnClickListener {
             Toast.makeText(applicationContext, "Title Application Click", Toast.LENGTH_SHORT).show()
         }
+
+        binding.startButton.setOnClickListener {
+            Toast.makeText(applicationContext, "Start Button Click", Toast.LENGTH_SHORT).show()
+            binding.titleApplication.setText(WeatherObject.haracter + " + " + WeatherObject.itemLevel)
+        }
     }
 }
